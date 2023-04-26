@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="fields">
+          <div class="field">
+            <label id="day-label" for="day">DAY</label>
+            <input type="text" placeholder="DD" id="day" required autocomplete="off">
+            <p class="error"><i class="day-error-message"></i></p>
+          </div>
+          <div class="field">
+            <label id="month-label" for="month">MONTH</label>
+            <input type="text" placeholder="MM" id="month" required autocomplete="off">
+            <p class="error"><i class="month-error-message"></i></p>
+          </div>
+          <div class="field">
+            <label id="year-label" for="year">YEAR</label>
+            <input type="text" placeholder="YYYY" id="year" required autocomplete="off">
+            <p class="error"><i class="year-error-message"></i></p>
+          </div>
+        </div>
+        <div class="age">
+          <p><i><span id="number-of-years">--</span> years</i></p>
+          <p><i><span id="number-of-months">--</span> months</i></p>
+          <p><i><span id="number-of-days">--</span> days</i></p>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="submit"><img src="/assets/images/icon-arrow.svg" alt="arrow down icon"></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
